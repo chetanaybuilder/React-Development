@@ -1,0 +1,84 @@
+.app {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.profile {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.profile:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.profile h2 {
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.profile h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  opacity: 0.65;
+}
+
+.profile p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+  opacity: 0.8;
+}
+
+.profile p:last-child {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+  .profiles {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    padding: 30px 16px 50px;
+  }
+
+  .profile {
+    padding: 22px;
+  }
+}
