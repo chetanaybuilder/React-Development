@@ -104,18 +104,4 @@ This project is the starting point of my React development journey.
 - Basic CSS styling
 - React project structure
 
----
-
-## 🏗️ Project Architecture
-
-```text
-src/
-├── components/
-│   ├── Header.jsx
-│   ├── MoneySummary.jsx
-│   └── ExpenseList.jsx
-│
-├── App.jsx
-├── App.css
-├── index.css
-└── main.jsx
+Author-chetanaybuilder
